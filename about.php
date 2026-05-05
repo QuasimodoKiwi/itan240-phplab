@@ -8,6 +8,7 @@ $org = "Connor's Laundromat";
 ?>
 <head>
     <title>About Us</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <h1>About Us</h1>
