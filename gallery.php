@@ -7,11 +7,13 @@ $images = [
     ["images/room.jpeg", "The inside of one of our locations!", "View of room from one angle"],
     ["images/room2.jpg", "Another look inside one of our locations!", "View of room from another angle"]
     ];
+$imgNum = 1;
 include("header.php");
 ?>
 
 <head>
     <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -20,9 +22,10 @@ include("header.php");
         <?php
             foreach($images as $image){
             echo "<figure>" .
-                "<img src=\"" . $image[0] . "\" alt=\">" . $image[2] . "\"" .
+                "<img src=\"" . $image[0] . "\" alt=\">" . $image[2] . "\"" . "class=\"img" . $imgNum . "\"" .
                 "<figcaption>" . $image[1] . "</figcaption>" .
                 "</figure>";
+            $imgNum++;
         }
         ?>
     </div>

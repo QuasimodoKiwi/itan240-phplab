@@ -34,7 +34,10 @@ $services = [
             }
         ?>
     </div>
-
+    <div>
+        <h5>For any business related inquiries, please make a reference at our contact page.</h5>
+        <a href="contact.php"><button>Contact Page</button></a>
+    </div>
 
     <?php include_once("footer.php"); ?>
 </body>
